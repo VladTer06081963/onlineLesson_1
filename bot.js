@@ -27,17 +27,17 @@ bot.on('message',async (msg) => {
   const text = msg.text;
 
 
-  if(text === '/start') {
-    await bot.sendMessage(chatId, 'Ниже появится кнопка, Заполни форму,', {
-      reply_markup: {
-        inline_keyboard: [
-          [{text: 'заполни форму', web_app: {url: webAppUrl}}]
-        ]
-      }
-    }
+  // if(text === '/start') {
+  //   await bot.sendMessage(chatId, 'Ниже появится кнопка, Заполни форму,', {
+  //     reply_markup: {
+  //       inline_keyboard: [
+  //         [{text: 'заполни форму', web_app: {url: webAppUrl}}]
+  //       ]
+  //     }
+  //   }
 
-    )
-  }
+  //   )
+  // }
   // send a message to the chat acknowledging receipt of their message
   await bot.sendMessage(chatId, 'Received your message ' + `${chatId}`);
 });
